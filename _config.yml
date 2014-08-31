@@ -1,0 +1,10 @@
+---
+exclude:
+- README.md
+- update.sh
+
+markdown: kramdown
+markdown_ext: md
+kramdown:
+  input: GFM
+...
