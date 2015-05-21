@@ -1,3 +1,0 @@
-pacman -Sy --noconfirm git
-git clone git://github.com/halyard/goblin /opt/goblin
-/opt/goblin/meta/install
