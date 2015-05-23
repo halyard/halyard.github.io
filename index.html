@@ -7,14 +7,25 @@ title: halyard
         <a href="https://github.com/halyard/halyard">Fork me on GitHub</a>
     </div>
 </div>
-<div class="item">
-    <h3>Looking to run halyard?</h3>
-    <pre>
-curl -sLo kickstart https://git.io/halyard
+<div class="header">
+    <h2>Configuration repos</h2>
+    <p>These are the various tools I use to configure my systems</p>
+</div>
+{% for repo in site.repos %}
+<div class="row">
+    <div class="install">
+        <h3>Looking to run {{repo.url | split: '/' | last }}?</h3>
+        <pre>
+curl -sLo kickstart {% if repo.short %}{{ repo.short }}{% else %}https://halyard.github.io{{ repo.url }}{% endif %}
 bash kickstart
-    </pre>
+        </pre>
+    </div>
+    <div class="source">
+        <h4>Source:</h4>
+        <p>This code comes from <a href="{{repo.upstream}}">{{repo.repo}}</a></p>
+    </div>
+    <div class="description">
+        {{ repo.content }}
+    </div>
 </div>
-<div class="item">
-    <h3>Don't know what halyard is?</h3>
-    <p>Halyard is my configuration for setting up systems using GitHub's <a href="https://boxen.github.com">Boxen</a>. The halyard code is <a href="https://github.com/halyard/halyard">open source</a>.</p>
-</div>
+{% endfor %}
