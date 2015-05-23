@@ -12,17 +12,21 @@ title: halyard
     <p>These are the various tools I use to configure my systems</p>
 </div>
 {% for repo in site.repos %}
+{% assign name = repo.url | split: '/' | last %}
+{% assign url = "https://github.com/halyard/" | append: name %}
+{% if repo.short %}
+    {% assign short = repo.short %}
+{% else %}
+    {% assign short = "https://halyard.github.io" | append: repo.url %}
+{% endif %}
 <div class="row">
     <div class="install">
-        <h3>Looking to run {{repo.url | split: '/' | last }}?</h3>
+        <h3>Looking to run {{ name }}?</h3>
+        <h5>(Source: <a href="{{url}}">halyard/{{ name }}</a>)</h5>
         <pre>
-curl -sLo kickstart {% if repo.short %}{{ repo.short }}{% else %}https://halyard.github.io{{ repo.url }}{% endif %}
+curl -sLo kickstart {{ short }}
 bash kickstart
         </pre>
-    </div>
-    <div class="source">
-        <h4>Source:</h4>
-        <p>This code comes from <a href="{{repo.upstream}}">{{repo.repo}}</a></p>
     </div>
     <div class="description">
         {{ repo.content }}
