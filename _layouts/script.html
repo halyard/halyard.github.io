@@ -1,5 +1,5 @@
 path="$(mktemp)"
-curl -sLo "$path" "{{page.url}}"
+curl -sLo "$path" "{{page.source}}"
 actual="$(sha256sum "$path" | cut -d' ' -f1)"
 if [ "$actual" != "{{page.checksum}}" ] ; then
     echo 'WARNING: Checksum mismatch'
