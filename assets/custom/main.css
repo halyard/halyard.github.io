@@ -3,7 +3,24 @@
 }
 
 body {
-    margin-top: 60px;
+    margin: 20px 50px;
     background-color: #FAF5EA;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 5px 0;
+}
+
+pre {
+    background: #222;
+    color: #FAF5EA;
+    padding: 20px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+div.row {
+    border-left: 3px solid black;
+    padding-left: 20px;
+    margin: 50px 0;
+}
