@@ -1,0 +1,9 @@
+path="$(mktemp)"
+curl -sLo "$path" "{{url}}"
+actual="$(sha256sum "$path" | cut -d' ' -f1)"
+if [ "$actual" != "{{checksum}}" ] ; then
+    echo 'WARNING: Checksum mismatch'
+    echo 'ctrl-c to cancel, enter to proceed'
+    read
+fi
+exec bash "$path"
