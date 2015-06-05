@@ -1,6 +1,6 @@
-path="$(mktemp)"
+path="$(mktemp -t halyard-XXXX)"
 curl -sLo "$path" "{{page.source}}"
-actual="$(sha256sum "$path" | cut -d' ' -f1)"
+actual="$(shasum -a 256 "$path" | cut -d' ' -f1)"
 if [ "$actual" != "{{page.checksum}}" ] ; then
     echo 'WARNING: Checksum mismatch'
     echo 'ctrl-c to cancel, enter to proceed'
