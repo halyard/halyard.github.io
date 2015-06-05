@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+
 path="$(mktemp -t halyard-XXXX)"
 curl -sLo "$path" "{{page.source}}"
 actual="$(shasum -a 256 "$path" | cut -d' ' -f1)"
