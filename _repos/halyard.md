@@ -1,7 +1,7 @@
 ---
 short: https://git.io/halyard
 source: https://raw.githubusercontent.com/halyard/halyard/master/meta/kickstart
-checksum: 324b7bf09f88f9089ec3f430b19b08c34e8a95d9c16afb01e3b8d92768bcfccf
+checksum: b04ddcf1bcbba1bdf9d44152f37e7252d45f6c52b1b23baf4dea297a53bb9c5e
 ---
 #### Boxen-based Mac configuration
 
