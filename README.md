@@ -14,6 +14,7 @@ Repos can be added/modified/removed in `_repos/`. The following YAML front-matte
 * source: the URL to pull the kickstart script from
 * short: the short URL to advertise for reaching this page (not the source script)
 * checksum: the sha256sum of the source script, used for integrity checking
+* weight: if set, this is used to order the scripts on the homepage. Unweighted things sort to the end.
 
 The content of the page is used as the description on the homepage
 
