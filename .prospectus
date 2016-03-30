@@ -1,0 +1,15 @@
+require 'yaml'
+
+item do
+  name 'halyard::gems'
+
+  expected do
+    static
+    set 'green'
+  end
+
+  actual do
+    gemnasium
+    slug 'halyard/halyard.github.io'
+  end
+end
