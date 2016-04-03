@@ -1,7 +1,7 @@
 require 'yaml'
 
 item do
-  name 'halyard::gems'
+  name 'halyard.github.io::gems'
 
   expected do
     static
