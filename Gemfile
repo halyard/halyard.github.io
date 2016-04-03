@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 2.5.0'
-gem 'kramdown', '~> 1.9.0'
-gem 'jekyll-assets', '~> 1.0.0'
-gem 'uglifier', '~> 2.7.0'
+gem 'jekyll', '~> 3.1.2'
+gem 'kramdown', '~> 1.10.0'
+gem 'jekyll-assets', '~> 2.1.2'
+gem 'uglifier', '~> 3.0.0'
 gem 'sass', '~> 3.4.1'
 gem 'therubyracer', '~> 0.12.1'
 gem 'rouge', '~> 1.10.0'
