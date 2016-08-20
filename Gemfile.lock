@@ -97,7 +97,7 @@ GEM
       libv8 (~> 3.16.14.0)
       ref
     trollop (2.1.2)
-    uglifier (3.0.1)
+    uglifier (3.0.2)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.1.0)
 
@@ -118,4 +118,4 @@ DEPENDENCIES
   uglifier (~> 3.0.0)
 
 BUNDLED WITH
-   1.12.1
+   1.12.5
