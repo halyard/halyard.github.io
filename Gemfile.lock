@@ -99,9 +99,9 @@ GEM
       libv8 (~> 3.16.14.15)
       ref
     trollop (2.1.2)
-    uglifier (3.1.13)
+    uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
-    unicode-display_width (1.2.0)
+    unicode-display_width (1.2.1)
 
 PLATFORMS
   ruby
@@ -117,7 +117,7 @@ DEPENDENCIES
   rubocop (~> 0.48.0)
   sass (~> 3.4.1)
   therubyracer (~> 0.12.1)
-  uglifier (~> 3.1.0)
+  uglifier (~> 3.2.0)
 
 BUNDLED WITH
-   1.13.7
+   1.14.6
