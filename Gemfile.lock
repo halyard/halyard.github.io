@@ -61,7 +61,7 @@ GEM
       forwardable-extended (~> 2.6)
     powerpack (0.1.1)
     public_suffix (2.0.5)
-    rack (1.6.6)
+    rack (1.6.8)
     rainbow (2.2.2)
       rake
     rake (12.0.0)
@@ -92,7 +92,7 @@ GEM
       unicode-display_width (~> 1.0, >= 1.0.1)
     ruby-progressbar (1.8.1)
     safe_yaml (1.0.4)
-    sass (3.4.23)
+    sass (3.4.24)
     sprockets (3.6.3)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
