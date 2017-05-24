@@ -9,7 +9,7 @@ gem 'therubyracer', '~> 0.12.1'
 gem 'link-checker', '~> 0.7.2'
 
 group :development do
-  gem 'rubocop', '~> 0.48.0'
+  gem 'rubocop', '~> 0.49.0'
   gem 'rake', '~> 12.0.0'
   gem 'rspec', '~> 3.6.0'
   gem 'fuubar', '~> 2.2.0'
