@@ -1,15 +1,23 @@
-require 'yaml'
+Prospectus.extra_dep('file', 'prospectus_circleci')
 
 item do
-  name 'halyard.github.io::gems'
+  noop
 
-  expected do
-    static
-    set 'green'
+  deps do
+    item do
+      name 'gems'
+
+      expected do
+        static
+        set 'green'
+      end
+
+      actual do
+        gemnasium
+        slug 'halyard/halyard.github.io'
+      end
+    end
   end
 
-  actual do
-    gemnasium
-    slug 'halyard/halyard.github.io'
-  end
+  extend ProspectusCircleci::Build.new('halyard/halyard.github.io')
 end
