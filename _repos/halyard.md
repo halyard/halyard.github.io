@@ -1,7 +1,7 @@
 ---
 short: https://git.io/halyard
-source: https://raw.githubusercontent.com/halyard/halyard/master/meta/kickstart
-checksum: 62ab946eddff3b794c96a8aa57c4e5d04e43b009bb360b17d2b779bc59402791
+source: https://raw.githubusercontent.com/halyard/local-puppet-helper/master/kickstart
+checksum: 67808d2c84bf55086494c7ba790b70c65699aa6a66471a7f1bf88dc67e63341b
 weight: 0
 ---
 #### Puppet-based Mac configuration
