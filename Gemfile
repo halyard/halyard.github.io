@@ -10,7 +10,7 @@ gem 'link-checker', '~> 0.7.2'
 
 group :development do
   gem 'rubocop', '~> 0.51.0'
-  gem 'rake', '~> 12.2.1'
+  gem 'rake', '~> 12.3.0'
   gem 'rspec', '~> 3.7.0'
   gem 'fuubar', '~> 2.2.0'
 end
