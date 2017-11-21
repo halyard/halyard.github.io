@@ -6,7 +6,7 @@ gem 'jekyll-assets', '~> 3.0.0'
 gem 'uglifier', '~> 3.2.0'
 gem 'sass', '~> 3.5.0'
 gem 'therubyracer', '~> 0.12.1'
-gem 'link-checker', '~> 0.7.2'
+gem 'html-proofer', '~> 3.7.0'
 
 group :development do
   gem 'rubocop', '~> 0.51.0'
