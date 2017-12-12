@@ -9,7 +9,7 @@ gem 'therubyracer', '~> 0.12.1'
 gem 'html-proofer', '~> 3.7.0'
 
 group :development do
-  gem 'rubocop', '~> 0.51.0'
+  gem 'rubocop', '~> 0.52.0'
   gem 'rake', '~> 12.3.0'
   gem 'rspec', '~> 3.7.0'
   gem 'fuubar', '~> 2.2.0'
