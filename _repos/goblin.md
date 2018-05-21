@@ -1,7 +1,7 @@
 ---
 short: https://git.io/goblin
 source: https://raw.githubusercontent.com/halyard/local-puppet-helper/master/kickstart
-checksum: 67808d2c84bf55086494c7ba790b70c65699aa6a66471a7f1bf88dc67e63341b
+checksum: 7abd4b828b03b2cf61ef1403387862d2a87a87c398250b66a1dab30b1ae4297b 
 ---
 #### Linux management
 
