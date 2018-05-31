@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'jekyll', '~> 3.8.0'
-gem 'kramdown', '~> 1.16.0'
+gem 'kramdown', '~> 1.17.0'
 gem 'jekyll-assets', '~> 3.0.1'
 gem 'uglifier', '~> 4.1.0'
 gem 'sass', '~> 3.5.0'
