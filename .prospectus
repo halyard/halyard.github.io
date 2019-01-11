@@ -3,8 +3,33 @@ my_slug = 'halyard/halyard.github.io'
 Prospectus.extra_dep('file', 'prospectus_travis')
 Prospectus.extra_dep('file', 'prospectus_gems')
 
+require 'yaml'
+require 'open-uri'
+require 'digest'
+
 item do
   noop
+
+  deps do
+    Dir.glob('_repos/*.md').each do |file|
+      repo = file.split('/').last.split('.').first
+      data = YAML.load(File.read(file))
+      checksum = Digest::SHA256.hexdigest(open(data['source']).read)
+      item do
+        name repo
+
+        expected do
+          static
+          set checksum
+        end
+
+        actual do
+          static
+          set data['checksum']
+        end
+      end
+    end
+  end
 
   extend ProspectusGems::Gemspec.new
   extend ProspectusTravis::Build.new(my_slug)
