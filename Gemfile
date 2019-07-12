@@ -10,5 +10,5 @@ group :development do
   gem 'rubocop', '~> 0.72.0'
   gem 'rake', '~> 12.3.0'
   gem 'rspec', '~> 3.8.0'
-  gem 'fuubar', '~> 2.3.0'
+  gem 'fuubar', '~> 2.4.1'
 end
