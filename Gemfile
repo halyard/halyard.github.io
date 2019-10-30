@@ -8,7 +8,7 @@ gem 'html-proofer', '~> 3.11.0'
 
 group :development do
   gem 'rubocop', '~> 0.76.0'
-  gem 'rake', '~> 12.3.0'
+  gem 'rake', '~> 13.0.0'
   gem 'rspec', '~> 3.8.0'
   gem 'fuubar', '~> 2.4.1'
 end
