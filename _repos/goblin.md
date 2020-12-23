@@ -1,6 +1,7 @@
 ---
 intro: Looking to set up goblin on an existing Archlinux system?
 kickstart: https://git.io/halyard-kickstart
+reponame: goblin
 ---
 #### Linux management
 

@@ -16,17 +16,17 @@ title: halyard
 {% if repo.intro %}
     {% assign intro = repo.intro %}
 {% else %}
-    {% assign intro = "Looking to set up " | append: repo.name | append: "?" %}
+    {% assign intro = "Looking to set up " | append: repo.reponame | append: "?" %}
 {% endif %}
 {% if repo.url %}
     {% assign url = repo.url %}
 {% else %}
-    {% assign url = "https://github.com/halyard/" | append: repo.name %}
+    {% assign url = "https://github.com/halyard/" | append: repo.reponame %}
 {% endif %}
 {% if repo.urlname %}
     {% assign urlname = repo.urlname %}
 {% else %}
-    {% assign urlname = "halyard/" | append: repo.name %}
+    {% assign urlname = "halyard/" | append: repo.reponame %}
 {% endif %}
 
 <div class="row">

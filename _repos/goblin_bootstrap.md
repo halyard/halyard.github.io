@@ -1,7 +1,7 @@
 ---
 intro: Looking to set up goblin during a fresh Archlinux install?
-kickstart: https://git.io/goblin-bootstrap
-url: https://github.com/halyard/goblin
+kickstart: https://git.io/goblin-install
+repourl: https://github.com/halyard/goblin
 urlname: halyard/goblin
 ---
 #### Linux management
