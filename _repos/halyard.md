@@ -1,6 +1,6 @@
 ---
-name: halyard
-short: https://git.io/halyard-kickstart
+reponame: halyard
+kickstart: https://git.io/halyard-kickstart
 ---
 #### Mac configuration
 

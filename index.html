@@ -18,8 +18,8 @@ title: halyard
 {% else %}
     {% assign intro = "Looking to set up " | append: repo.reponame | append: "?" %}
 {% endif %}
-{% if repo.url %}
-    {% assign url = repo.url %}
+{% if repo.repourl %}
+    {% assign url = repo.repourl %}
 {% else %}
     {% assign url = "https://github.com/halyard/" | append: repo.reponame %}
 {% endif %}
