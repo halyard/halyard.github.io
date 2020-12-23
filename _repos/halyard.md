@@ -1,4 +1,5 @@
 ---
+name: halyard
 short: https://git.io/halyard-kickstart
 ---
 #### Mac configuration

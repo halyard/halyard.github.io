@@ -21,12 +21,12 @@ title: halyard
 {% if repo.url %}
     {% assign url = repo.url %}
 {% else %}
-    {% assign url = "https://github.com/halyard/" | append: name %}
+    {% assign url = "https://github.com/halyard/" | append: repo.name %}
 {% endif %}
 {% if repo.urlname %}
     {% assign urlname = repo.urlname %}
 {% else %}
-    {% assign urlname = "halyard/" | append: name %}
+    {% assign urlname = "halyard/" | append: repo.name %}
 {% endif %}
 
 <div class="row">
