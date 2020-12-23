@@ -1,8 +1,7 @@
 ---
-short: https://git.io/goblin
-source: https://raw.githubusercontent.com/halyard/local-puppet-helper/master/kickstart
-checksum: 5aa2c9ecb345f42e0f47322a94c70b25f2835a28998f29292c90e6e8bf16769a
+intro: Looking to set up goblin on an existing Archlinux system?
+kickstart: https://git.io/halyard-kickstart
 ---
 #### Linux management
 
-Goblin handles generic provisioning for my Linux servers
+Goblin handles configuration management for my Archlinux systems. For fresh installs from the Archlinux installer, use the adjacent bootstrapper.

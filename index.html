@@ -13,18 +13,27 @@ title: halyard
 </div>
 {% assign repos = site.repos | sort: 'weight', 'last' %}
 {% for repo in repos %}
-{% assign name = repo.url | split: '/' | last %}
-{% assign url = "https://github.com/halyard/" | append: name %}
-{% if repo.short %}
-    {% assign short = repo.short %}
+{% if repo.intro %}
+    {% assign intro = repo.intro %}
 {% else %}
-    {% assign short = "https://halyard.github.io" | append: repo.url %}
+    {% assign intro = "Looking to set up " | append: repo.name | append: "?" %}
 {% endif %}
+{% if repo.url %}
+    {% assign url = repo.url %}
+{% else %}
+    {% assign url = "https://github.com/halyard/" | append: name %}
+{% endif %}
+{% if repo.urlname %}
+    {% assign urlname = repo.urlname %}
+{% else %}
+    {% assign urlname = "halyard/" | append: name %}
+{% endif %}
+
 <div class="row">
     <div class="install">
-        <h3>Looking to run {{ name }}?</h3>
-        <h4>(Source: <a href="{{url}}">halyard/{{ name }}</a>)</h4>
-        <pre>curl -sLo kickstart {{ short }}
+        <h3>{{ intro }}</h3>
+        <h4>(Source: <a href="{{ url }}">{{ urlname }}</a>)</h4>
+        <pre>curl -sLo kickstart {{ repo.kickstart }}
 sudo bash kickstart</pre>
     </div>
     <div class="description">{{ repo.content }}</div>

@@ -4,13 +4,6 @@ exclude:
 - update.sh
 collections:
   repos:
-    output: true
-    permalink: kickstart/:title
-defaults:
-- scope:
-    type: repos
-  values:
-    layout: script
 markdown: kramdown
 markdown_ext: md
 kramdown:
