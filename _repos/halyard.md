@@ -2,8 +2,7 @@
 reponame: halyard
 kickstart: https://git.io/halyard-kickstart
 ---
-#### Mac configuration
+#### Linux configuration
 
-Halyard configures my Mac workstations using Puppet.
-It was originally based on GitHub's [Boxen](https://boxen.github.io).
+Halyard configures my Linux servers using Puppet. It's using largely homegrown, basic modules.
 
