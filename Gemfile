@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'jekyll', '~> 4.3.2'
 gem 'uglifier', '~> 4.2.0'
-gem 'html-proofer', '~> 3.13.0'
+gem 'html-proofer', '~> 5.2.1'
 
 group :development do
   gem 'rubocop', '~> 1.54.1'
