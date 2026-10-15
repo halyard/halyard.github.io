@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 4.3.2'
+gem 'jekyll', '~> 4.4.1'
 gem 'uglifier', '~> 4.2.0'
 gem 'html-proofer', '~> 5.2.1'
 
